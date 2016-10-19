@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>My Leadership Score Card</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+<style type="text/css">
+  .globalPlacemat {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #81A1B7;
+    background-color: rgba(117, 161, 180, 0.5);
+}
+.globalBackground {
+    background-color: #007ECD;
+    background-repeat: repeat;
+    background-position: center top;
+    background-image: url("https://performancemanager4.successfactors.com//public/ui-resource/TATACommTest/21;mod=a23bf9075357fbc9d02a38d69f3dbea6");
+}
+.firstPortlet{
+  border: 2px solid #286090;
+    padding: 8px;
+    border-radius: 25px;
+    margin-top: 7px;
+    margin-left: 3px;
+    background-color: #fff;
+    width: 100%;
+}
+.labelColor{
+  background: orange;
+  text-align: left;
+}
+.metricsHeader{
+      background: #3C86C5;
+    text-align: center;
+    color: white;
+}
+.metricsHeaderBlock{
+  border: 1px solid black;
+}
+/*sa*/
+.greyBg{
+  background-color: rgba(128, 128, 128, 0.36);
+  width: 20%;
+}
+
+.greyColor{
+  background-color: rgba(128, 128, 128, 0.36);
+}
+.tabel-left-margin{
+      margin-left: -15px;
+}
+.tableColWidth{
+      width: 44%;
+}
+.colValuWidth{
+     width: 31%;
+}
+.margin6{
+      margin-left: -6px;
+}
+.width43{
+      width: 43%;
+}
+
+.headingStyle{
+      text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+     margin-top: 5px;
+}
+.headBg{
+  background: rgba(51, 122, 183, 0.79);
+}
+.subheadBg{
+  background: #7a7a7a;
+    text-align: center
+}
+
+.subheadBg label{
+      color: white;
+    font-size: 16px;
+}
+
+.subheadBg label i{
+  font-size: 11px;
+}
+
+.table2 td{
+  border: 1px solid rgba(128, 128, 128, 0.26);
+}
+.tableHeader{
+  background: #9e9e9e;
+  text-align: left;
+}
+.subHeader2{
+  background: #7a7a7a;
+    text-align: left;
+    color: white;
+}
+.tb-header{
+      background: rgba(204, 204, 204, 0.53);
+    width: 21%;
+    vertical-align: middle!important;
+}
+.topMargin{
+      margin-top: -20px;
+}
+.heade_left_mar{
+  margin-left: 3px;
+}
+.td2{
+      width: 29%;
+}
+.circle {
+   width: 50px;
+    height: 50px;
+    background: rgba(255, 165, 0, 0.76);
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 24px;
+    margin-left: 79px;
+    text-align: center;
+    
+    
+  }
+  .circlePercent{
+    float: left;
+    margin-top: 12px;
+    margin-left: 13px;
+  }
+  .green{
+    background: rgba(0, 128, 0, 0.75);
+  }
+  .red{
+    background: rgba(255, 0, 0, 0.75);
+  }
+  .table2 var{
+        margin-left: 91px!important;
+  }
+</style>
+
+<script type="text/javascript">
+
+ /* username: adminth
+  password: Cloud@123*/
+// To get url params
+//rahulid-> 6002267
+
+/*window.open('https://c373497898ac70309110b00992ad08ed33b0eb9f.googledrive.com/host/0BzVlLNSP0EMVfk9sbHZwWkhnN3UwYnZqeG9aTTMzQWd3RnB0YkNKYnlrLXQyb25QcGptVXc/ScoreCard.html?uid=' + pageHeaderJsonData.userInfo.id)
+
+"https://api4.successfactors.com/odata/v2/Background_Finaloverall?$format=json&$filter=userId eq '6002267'"
+"https://api4.successfactors.com/odata/v2/Background_Es_esat?$format=json&$filter=userId eq '6002267'"
+*/
+/*var GetURLParameter = function (sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}​;*/
+var ud = window.location.search.substring(1).split('=')
+var id = ud[1];
+console.log(ud)
+
+
+$.ajax({
+    url: "https://query.yahooapis.com/v1/public/yql",
+ 
+    // The name of the callback parameter, as specified by the YQL service
+    jsonp: "callback",
+ 
+    // Tell jQuery we're expecting JSONP
+    dataType: "jsonp",
+ 
+    // Tell YQL what we want and that we want JSON
+    data: {
+        q: "USE 'https://gist.github.com/raw/2248475/c84ca7a88267f0f7c713129873ef86457b40e67b/httpbasicaccess.xml' AS remote; SELECT * FROM remote WHERE url=\"https://api4.successfactors.com/odata/v2/User('" + id + "')?$format=json\" AND username = 'adminth@TATACommTest' AND password='TCLCloud@123';",
+        format: "json"
+    },
+ 
+    // Work with the response
+    success: function( response ) {
+      var main = response;
+        console.log( main ); 
+        $("#emp_name_val").text(main.query.results.d.firstName + " " + main.query.results.d.lastName);
+        $("#emp_band_val").text(main.query.results.d.custom08);
+        $("#emp_jf_val").text(main.query.results.d.reviewFreq);
+        $("#emp_country_val").text(main.query.results.d.country);
+        $("#emp_title_val").text(main.query.results.d.title);
+        $("#emp_bu_val").text(main.query.results.d.department);
+        $("#emp_region_val").text(main.query.results.d.custom15);
+
+    }
+});
+
+$.ajax({
+    url: "https://query.yahooapis.com/v1/public/yql",
+ 
+    // The name of the callback parameter, as specified by the YQL service
+    jsonp: "callback",
+ 
+    // Tell jQuery we're expecting JSONP
+    dataType: "jsonp",
+ 
+    // Tell YQL what we want and that we want JSON
+    data: {
+        q: "USE 'https://gist.github.com/raw/2248475/c84ca7a88267f0f7c713129873ef86457b40e67b/httpbasicaccess.xml' AS remote; SELECT * FROM remote WHERE url=\"https://api4.successfactors.com/odata/v2/Background_Finaloverall?$format=json&$filter=userId%20eq%20'" + id + "'\" AND username = 'adminth@TATACommTest' AND password='TCLCloud@123';",
+        format: "json"
+    },
+ 
+    // Work with the response
+    success: function( response ) {
+      var bgElemRatimg = response;
+        console.log( bgElemRatimg ); 
+        
+      var fiscalYear1 = bgElemRatimg.query.results.d.results[0].fiscyr;
+      var fiscalYear2 = bgElemRatimg.query.results.d.results[1].fiscyr;
+
+      $("#rating_" + fiscalYear1).text(bgElemRatimg.query.results.d.results[0].potrat);
+      $("#rating_" + fiscalYear2).text(bgElemRatimg.query.results.d.results[1].potrat);
+
+    }
+});
+$.ajax({
+    url: "https://query.yahooapis.com/v1/public/yql",
+ 
+    // The name of the callback parameter, as specified by the YQL service
+    jsonp: "callback",
+ 
+    // Tell jQuery we're expecting JSONP
+    dataType: "jsonp",
+ 
+    // Tell YQL what we want and that we want JSON
+    data: {
+        q: "USE 'https://gist.github.com/raw/2248475/c84ca7a88267f0f7c713129873ef86457b40e67b/httpbasicaccess.xml' AS remote; SELECT * FROM remote WHERE url=\"https://api4.successfactors.com/odata/v2/Background_Es_esat?$format=json&$filter=userId%20eq%20'" + id + "'\" AND username = 'adminth@TATACommTest' AND password='TCLCloud@123';",
+        format: "json"
+    },
+ 
+    // Work with the response
+    success: function( response ) {
+      var bgElemEsat = response;
+        console.log( bgElemEsat ); 
+
+        $("#CSAT_score").text(bgElemEsat.query.results.d.results[0].score);
+        $("#ICSAT_score").text(bgElemEsat.query.results.d.results[0].score);
+
+      
+
+    }
+});
+
+
+
+
+
+
+
+
+
+</script>
+
+  </head>
+  <body class="globalBackground">
+
+
+<div class="container-fluid">
+
+<div class="row center-block" style="width:1045px;">
+    <div class="col-md-12">
+      <nav class="navbar navbar-default" role="navigation">
+                
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            
+            
+            <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Home<strong class="caret"></strong></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="https://performancemanager41.successfactors.com/sf/home?bplte_company=TATACommTest">Home</a>
+                </li>
+                <li class="divider">
+                </li> 
+                <li>
+                  <a href="https://performancemanager41.successfactors.com/xi/ui/edu/pages/publicProfile.xhtml?bplte_company=TATACommTest">My Employee Profile</a>
+                </li>
+                <li class="divider">
+                </li> 
+                <li>
+                  <a href="https://performancemanager41.successfactors.com/sf/orgchart?bplte_company=TATACommTest">Company Info</a>
+                </li>
+                <li class="divider">
+                </li>           
+              </ul>
+            </li>
+          </ul>
+          
+          
+        </div>
+        
+      </nav>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="row center-block globalPlacemat" style="width:1045px;">
+    <div class="col-md-12">
+            <!-- <div class="row">
+                <div class="col-md-12">
+                <p>My Leadership Scorecard</p>
+
+                </div>
+              </div> -->
+
+      <div class="row firstPortlet">
+        <div class="col-md-12">
+        <div class="row headBg">
+          <h1 class="headingStyle"> My Leadership Score Card</h1>
+        </div>
+         <div class="row">
+
+            <table class="table">
+              <tr>
+                <td class="greyBg">
+                    <label>Name</label>
+                </td>
+                <td class="colValuWidth"> <var> Stuart Logan</var> </td>
+               <!--  <td class="greyBg"> 
+                    <label>Title</label>
+                </td>
+                <td>
+                  <var>Vice President</var>
+                </td> -->
+              </tr>
+
+              <tr> 
+              <td class="greyBg">
+                  
+                  <label>Title</label>
+
+               </td>
+              <td>
+               <var>Vice President</var>
+               
+              </td>
+              <td class="greyBg">
+              
+              <label>Sub-Band</label>
+
+
+             
+              </td>
+              <td>
+           
+                 <var>B7-1</var>
+
+              </td>
+              </tr>
+
+              <tr>
+                <td class="greyBg">
+                 
+               
+                  <label>  Job Family</label>
+                </td>
+                <td>
+                
+                     <var>Human Resources</var>
+                </td>
+                <td class="greyBg">
+                 
+                  
+                   <label> Business Unit</label>
+
+                </td>
+                <td>
+               
+                   <var>Human Resource</var>
+                </td>
+
+              </tr>
+
+              <tr>
+              <td class="greyBg">
+                   <label>Country</label>
+                
+              </td>
+              <td>
+                
+                  <var>United States</var>
+              </td>
+              <td class="greyBg">
+              
+               <label>Region</label>
+                
+              </td>
+              <td>
+              <var></var>
+                
+              </td>
+               </tr>
+
+               <tr>
+                <td class="greyBg">
+                  
+                <label>Tenure</label>
+              </td>
+              <td>
+                <var>3.69</var>
+                 
+              </td>
+                <td class="greyBg">
+              
+              
+                <label>Span of Control</label>
+              </td>
+              <td>
+              <var></var>
+                <var>3.9</var>
+              </td>
+
+               </tr>
+
+               
+
+            </table>
+        </div>
+
+        <div class="row subheadBg">
+          <label>Performance Rating <i> (descending order-recent rating on extreme left)</i> </label>
+          
+        </div>
+        <div class="row">
+          <table class="table table2">
+            <tr>
+              <td>
+                <var> Best in Class</var>
+              </td>
+              <td>
+                <var>Best in Class</var>
+              </td>
+              <td>
+                <var>Best in Class</var>
+              </td>
+            </tr>
+          </table>
+        </div>
+          
+          
+
+          <div class="row subHeader2">
+
+            <label class="heade_left_mar"> Leadership Metrics</label>
+            
+          </div>
+          <div class="row tableHeader">
+            <label class="heade_left_mar">Engagement </label>
+          </div>
+          <div class="row">
+            
+            <table class="table table2">
+            <tr>
+              <td class="tb-header">
+              <p>ESAT (Direct)</p></td>
+              <td class="td2">
+                <div class="circle">
+                <span class="circlePercent">62%</span>
+
+                </div>
+              </td>
+              <td class="tb-header">
+                <p>ME/ Pulse</p>
+              </td>
+              <td>
+                <div class="circle">
+                <span class="circlePercent">62%</span>
+
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="tb-header">
+              <p>ESAT (Rollup)</p></td>
+              <td class="td2">
+                 <div class="green circle">
+                <span class="circlePercent">82%</span>
+
+                </div>
+              </td>
+              <td class="tb-header">
+                
+              </td>
+              <td>
+               
+              </td>
+            </tr>
+              
+            </table>
+          </div>
+          <div class="row tableHeader topMargin">
+            <label class="heade_left_mar">Customer </label>
+          </div>
+          <div class="row">
+            <table class="table table2">
+              <tr>
+                <td class="tb-header">
+                  <p>CSAT Score</p>
+                </td>
+                <td class="td2">
+                  <div class="green circle">
+                <span class="circlePercent">72%</span>
+
+                </div>
+                </td>
+                <td class="tb-header">
+                  <p>ICSAT Score</p>
+                </td>
+                <td>
+                   <div class="green circle">
+                <span class="circlePercent">72%</span>
+
+                </div>
+                </td>
+
+              </tr>
+            </table>
+          </div>
+
+         <div class="row tableHeader topMargin">
+          <label class="heade_left_mar">People</label>
+         </div>
+         <div class="row">
+             <table class="table table2">
+              <tr>
+                
+                <td class="tb-header">
+                  <p>Quarterly performance review coverage</p>
+                </td>
+                <td class="td2">
+                  
+                   <div class="circle">
+                <span class="circlePercent">50%</span>
+
+                </div>
+                </td>
+                <td class="tb-header">
+                  <p>Quarterly performance review effectiveness</p>
+                </td>
+                <td>
+                   <div class="green circle">
+                <span class="circlePercent">100%</span>
+
+                </div>
+                </td>
+              </tr>
+              
+               <tr>
+                
+                <td class="tb-header">
+                  <p>Attrition Rate</p>
+                </td>
+                <td>
+                  <var></var>
+                </td>
+                <td class="tb-header">
+                  <p class="muted">Goal Setting Coverage</p>
+                </td>
+                <td>
+                   <div class="green circle">
+                <span class="circlePercent">86%</span>
+
+                </div>
+                </td>
+              </tr>
+
+              <tr>
+                
+                <td class="tb-header">
+                  <p>&nbsp;&nbsp;Voluntary Attrition</p>
+                </td>
+                <td class="td2">
+                   <div class="circle">
+                <span class="circlePercent">50%</span>
+
+                </div>
+                </td>
+                <td class="tb-header">
+                  <p class="muted"> Training Coverage</p>
+                </td>
+                <td>
+                  <div class="circle">
+                <span class="circlePercent">66%</span>
+
+                </div>
+                </td>
+              </tr>
+              <tr>  
+                <td class="tb-header">
+                  <p>&nbsp;&nbsp;Early Attrition</p>
+                </td>
+                <td>
+                  <var>NA</var>
+                </td>
+                <td class="tb-header">
+                  <p class="muted"></p>
+                </td>
+                <td>
+                  <var></var>
+                </td>
+              </tr>
+             </table>
+          
+         </div>
+
+         <div class="row tableHeader topMargin">
+          <label class="heade_left_mar">Winning Mix</label>
+         </div>
+         <div class="row">
+      <table class="table table2">
+        <tr>
+          <td class="tb-header">
+            <p class="text muted">Team Mix (%F)</p>
+          </td>
+          <td class="td2">
+             <div class="red circle">
+                <span class="circlePercent">0%</span>
+
+                </div>
+          </td>
+          <td class="tb-header">
+            <p class="text muted">New Hire Mix (%F)</p>
+          </td>
+          <td>
+             <div class="red circle">
+                <span class="circlePercent">0%</span>
+
+                </div>
+          </td>
+        </tr>
+        <tr>
+        <td class="tb-header">
+          <p class="text muted"> Promotion Mix (%F)</p>
+        </td>
+        <td>
+          <var> NA</var>
+        </td>
+        <td class="tb-header">
+          <p>Attrition Mix (%F)</p>
+        </td>
+        <td>
+          <var>NA</var>
+        </td>
+        
+          
+        </tr>
+      </table>          
+         </div>
+         <div class="row tableHeader topMargin">
+          <label class="heade_left_mar">Leadership</label>
+         </div>
+         <div class="row">
+          <table class="table table2">
+            <tr>
+              <td class="tb-header">
+                <p>Collaboration/CFE Score</p>
+              </td>
+              <td class="td2">
+                <div class="red circle">
+                <span class="circlePercent">33%</span>
+
+                </div>
+              </td>
+              <td class="tb-header"></td>
+              <td></td>
+
+            </tr>
+            
+          </table>
+         </div>
+
+        
+
+
+
+
+
+          
+          
+      
+
+        
+        </div>
+
+        <div class="row" style="text-align: center;">
+        <p class="muted"> *Scorecard refreshed as on  01-01-2016 </p>
+          
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+   
+  </body>
+</html>
